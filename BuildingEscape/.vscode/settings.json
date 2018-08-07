@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/.vscode": true,
+		"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.xcworkspace": true,
+		"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/Content": true,
+		"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/Intermediate": true,
+		"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/Saved": true
+	}
+}
