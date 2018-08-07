@@ -1,9 +1,10 @@
 {
 	"files.exclude": {
-		"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/.vscode": true,
-		"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.xcworkspace": true,
-		"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/Content": true,
-		"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/Intermediate": true,
-		"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/Saved": true
+		"E:/My Documents/Unreal Projects/UnrealCourse/03_BuildingEscape/BuildingEscape/.vs": true,
+		"E:/My Documents/Unreal Projects/UnrealCourse/03_BuildingEscape/BuildingEscape/.vscode": true,
+		"E:/My Documents/Unreal Projects/UnrealCourse/03_BuildingEscape/BuildingEscape/BuildingEscape.xcworkspace": true,
+		"E:/My Documents/Unreal Projects/UnrealCourse/03_BuildingEscape/BuildingEscape/Content": true,
+		"E:/My Documents/Unreal Projects/UnrealCourse/03_BuildingEscape/BuildingEscape/Intermediate": true,
+		"E:/My Documents/Unreal Projects/UnrealCourse/03_BuildingEscape/BuildingEscape/Saved": true
 	}
 }

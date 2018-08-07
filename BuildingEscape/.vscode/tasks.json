@@ -2,581 +2,571 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "BuildingEscape Mac Debug Build",
+			"label": "BuildingEscape Win32 Debug Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac Debug Rebuild",
+			"label": "BuildingEscape Win32 Debug Rebuild",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscape Mac Debug Clean"
+				"BuildingEscape Win32 Debug Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac Debug Clean",
+			"label": "BuildingEscape Win32 Debug Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac DebugGame Build",
+			"label": "BuildingEscape Win32 DebugGame Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac DebugGame Rebuild",
+			"label": "BuildingEscape Win32 DebugGame Rebuild",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscape Mac DebugGame Clean"
+				"BuildingEscape Win32 DebugGame Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac DebugGame Clean",
+			"label": "BuildingEscape Win32 DebugGame Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscape Mac Development Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscape",
-				"Mac",
-				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac Development Rebuild",
+			"label": "BuildingEscape Win32 Development Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscape Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscape",
+				"Win32",
+				"Development",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscape Mac Development Clean"
+				"BuildingEscape Win32 Development Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac Development Clean",
+			"label": "BuildingEscape Win32 Development Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscape Mac Shipping Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscape",
-				"Mac",
-				"Shipping",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac Shipping Rebuild",
+			"label": "BuildingEscape Win32 Shipping Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"Shipping",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscape Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscape",
+				"Win32",
+				"Shipping",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscape Mac Shipping Clean"
+				"BuildingEscape Win32 Shipping Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac Shipping Clean",
+			"label": "BuildingEscape Win32 Shipping Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"Shipping",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscape Mac Test Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscape",
-				"Mac",
-				"Test",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac Test Rebuild",
+			"label": "BuildingEscape Win32 Test Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"Test",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscape Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscape",
+				"Win32",
+				"Test",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscape Mac Test Clean"
+				"BuildingEscape Win32 Test Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape Mac Test Clean",
+			"label": "BuildingEscape Win32 Test Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
-				"Mac",
+				"Win32",
 				"Test",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS Debug Build",
+			"label": "BuildingEscape Win64 Debug Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS Debug Rebuild",
+			"label": "BuildingEscape Win64 Debug Rebuild",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscape IOS Debug Clean"
+				"BuildingEscape Win64 Debug Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS Debug Clean",
+			"label": "BuildingEscape Win64 Debug Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS DebugGame Build",
+			"label": "BuildingEscape Win64 DebugGame Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS DebugGame Rebuild",
+			"label": "BuildingEscape Win64 DebugGame Rebuild",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscape IOS DebugGame Clean"
+				"BuildingEscape Win64 DebugGame Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS DebugGame Clean",
+			"label": "BuildingEscape Win64 DebugGame Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscape IOS Development Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscape",
-				"IOS",
-				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS Development Rebuild",
+			"label": "BuildingEscape Win64 Development Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscape Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscape",
+				"Win64",
+				"Development",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscape IOS Development Clean"
+				"BuildingEscape Win64 Development Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS Development Clean",
+			"label": "BuildingEscape Win64 Development Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscape IOS Shipping Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscape",
-				"IOS",
-				"Shipping",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS Shipping Rebuild",
+			"label": "BuildingEscape Win64 Shipping Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"Shipping",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscape Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscape",
+				"Win64",
+				"Shipping",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscape IOS Shipping Clean"
+				"BuildingEscape Win64 Shipping Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS Shipping Clean",
+			"label": "BuildingEscape Win64 Shipping Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"Shipping",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscape IOS Test Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscape",
-				"IOS",
-				"Test",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS Test Rebuild",
+			"label": "BuildingEscape Win64 Test Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"Test",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscape Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscape",
+				"Win64",
+				"Test",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscape IOS Test Clean"
+				"BuildingEscape Win64 Test Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscape IOS Test Clean",
+			"label": "BuildingEscape Win64 Test Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
-				"IOS",
+				"Win64",
 				"Test",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 Debug Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 Debug Rebuild",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -585,53 +575,52 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 Debug Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscape HTML5 DebugGame Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscape",
-				"HTML5",
-				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscape HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscape",
+				"HTML5",
+				"DebugGame",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 DebugGame Rebuild",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -640,53 +629,52 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 DebugGame Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscape HTML5 Development Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscape",
-				"HTML5",
-				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscape HTML5 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscape",
+				"HTML5",
+				"Development",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 Development Rebuild",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -695,53 +683,52 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 Development Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscape HTML5 Shipping Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscape",
-				"HTML5",
-				"Shipping",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscape HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscape",
+				"HTML5",
+				"Shipping",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 Shipping Rebuild",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"Shipping",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -750,53 +737,52 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 Shipping Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"Shipping",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscape HTML5 Test Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscape",
-				"HTML5",
-				"Test",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscape HTML5 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscape",
+				"HTML5",
+				"Test",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 Test Rebuild",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"Test",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -805,190 +791,186 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
 			"label": "BuildingEscape HTML5 Test Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscape",
 				"HTML5",
 				"Test",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscapeEditor Mac Debug Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscapeEditor",
-				"Mac",
-				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscapeEditor Mac Debug Rebuild",
+			"label": "BuildingEscapeEditor Win64 Debug Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscapeEditor",
-				"Mac",
+				"Win64",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscapeEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscapeEditor",
+				"Win64",
+				"Debug",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscapeEditor Mac Debug Clean"
+				"BuildingEscapeEditor Win64 Debug Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscapeEditor Mac Debug Clean",
+			"label": "BuildingEscapeEditor Win64 Debug Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscapeEditor",
-				"Mac",
+				"Win64",
 				"Debug",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscapeEditor Mac DebugGame Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscapeEditor",
-				"Mac",
-				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscapeEditor Mac DebugGame Rebuild",
+			"label": "BuildingEscapeEditor Win64 DebugGame Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscapeEditor",
-				"Mac",
+				"Win64",
 				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscapeEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscapeEditor",
+				"Win64",
+				"DebugGame",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscapeEditor Mac DebugGame Clean"
+				"BuildingEscapeEditor Win64 DebugGame Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscapeEditor Mac DebugGame Clean",
+			"label": "BuildingEscapeEditor Win64 DebugGame Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscapeEditor",
-				"Mac",
+				"Win64",
 				"DebugGame",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
-			}
-		},
-		{
-			"label": "BuildingEscapeEditor Mac Development Build",
-			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
-			"args": [
-				"BuildingEscapeEditor",
-				"Mac",
-				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscapeEditor Mac Development Rebuild",
+			"label": "BuildingEscapeEditor Win64 Development Build",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
 				"BuildingEscapeEditor",
-				"Mac",
+				"Win64",
 				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "E:\\Games\\UE_4.20"
+			}
+		},
+		{
+			"label": "BuildingEscapeEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"BuildingEscapeEditor",
+				"Win64",
+				"Development",
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"BuildingEscapeEditor Mac Development Clean"
+				"BuildingEscapeEditor Win64 Development Clean"
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		},
 		{
-			"label": "BuildingEscapeEditor Mac Development Clean",
+			"label": "BuildingEscapeEditor Win64 Development Clean",
 			"group": "build",
-			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
 				"BuildingEscapeEditor",
-				"Mac",
+				"Win64",
 				"Development",
-				"/Users/sxs2uud/Development/Unreal/03_BuildingEscape/BuildingEscape/BuildingEscape.uproject",
-				"-waitmutex",
-				"-clean"
+				"E:\\My Documents\\Unreal Projects\\UnrealCourse\\03_BuildingEscape\\BuildingEscape\\BuildingEscape.uproject",
+				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/Users/Shared/Epic Games/UE_4.20"
+				"cwd": "E:\\Games\\UE_4.20"
 			}
 		}
 	]
