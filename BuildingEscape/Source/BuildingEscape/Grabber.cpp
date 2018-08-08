@@ -28,8 +28,8 @@ void UGrabber::FindPhysicsHandleComponent()
 	if (PhysicsHandle)
 	{
 		// Physics handle is found
-	} 
-	else 
+	}
+	else
 	{
 		UE_LOG(LogTemp, Error, TEXT("Error: PhysicsHandle not found in %s"), *GetOwner()->GetName());
 	}
@@ -52,31 +52,53 @@ void UGrabber::SetupInputComponent()
 	}
 }
 
-void UGrabber::Grab()
-{
- UE_LOG(LogTemp, Warning, TEXT("Grab"));
-
- /// LINE TRACE Try to reach any actors with PhysicsBody collision channel set
- GetFirstPhysicsBodyInReach();
- /// If we hit something, then attach physics handle
-	/// TODO attach physics handle
-}
-
-void UGrabber::Release()
-{
-	UE_LOG(LogTemp, Warning, TEXT("Release"));
-
-	/// TODO release PhysicsHandle
-}
-
 // Called every frame
 void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction *ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	/// if physics handle is attached
-		/// move object that we're grabbing
+	/// Get the player view point during this tick
+	FVector PlayerViewPointLocation;
+	FRotator PlayerViewPointRotation;
+	GetWorld()->GetFirstPlayerController()->GetPlayerViewPoint(
+			OUT PlayerViewPointLocation,
+			OUT PlayerViewPointRotation);
 
+	FVector LineTraceEnd = PlayerViewPointLocation + PlayerViewPointRotation.Vector() * Reach;
+
+	/// if physics handle is attached
+	if (PhysicsHandle->GrabbedComponent)
+	{
+		/// move object that we're grabbing
+		PhysicsHandle->SetTargetLocation(LineTraceEnd);
+	}
+}
+
+void UGrabber::Grab()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Grab"));
+
+	/// LINE TRACE Try to reach any actors with PhysicsBody collision channel set
+	auto HitResult = GetFirstPhysicsBodyInReach();
+	auto ComponentToGrab = HitResult.GetComponent();
+	auto ActorHit = HitResult.GetActor();
+
+	/// If we hit something
+	if (ActorHit)
+	{ /// attach physics handle
+		PhysicsHandle->GrabComponent(
+				ComponentToGrab,
+				NAME_None,
+				ComponentToGrab->GetOwner()->GetActorLocation(),
+				true /// allow rotation
+		);
+	}
+}
+
+void UGrabber::Release()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Release"));
+	PhysicsHandle->ReleaseComponent();
 }
 
 const FHitResult UGrabber::GetFirstPhysicsBodyInReach()
@@ -92,7 +114,8 @@ const FHitResult UGrabber::GetFirstPhysicsBodyInReach()
 
 	/// Setup query params
 	FCollisionQueryParams TraceParams = (FName(TEXT("")), false, GetOwner());
-	// /Ray-cast out to reach distance
+
+	/// Ray-cast out to reach distance
 	FHitResult Hit;
 	GetWorld()->LineTraceSingleByObjectType(
 			OUT Hit,
@@ -109,5 +132,5 @@ const FHitResult UGrabber::GetFirstPhysicsBodyInReach()
 		UE_LOG(LogTemp, Warning, TEXT("Line Trace: %s"), *(ActorHit->GetName()));
 	}
 
-	return FHitResult();
+	return Hit;
 }
